@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Esmalte Studio — Contenido para clínicas dentales, todos los meses</title>
+<meta name="description" content="Producimos las publicaciones, historias y la estrategia de tu clínica dental cada mes. Tú solo apruebas las ideas. Escríbenos por WhatsApp.">
+<link rel="canonical" href="https://esmaltestudio.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Esmalte Studio — Contenido para clínicas dentales">
+<meta property="og:description" content="Nos ocupamos de las redes de tu clínica: publicaciones, historias y estrategia cada mes. Tú solo apruebas las ideas.">
+<meta property="og:image" content="https://esmaltestudio.com/og.jpg">
+<meta property="og:url" content="https://esmaltestudio.com/">
+<meta property="og:site_name" content="Esmalte Studio">
+<meta name="twitter:card" content="summary_large_image">
+<!-- ↓↓↓ META PIXEL: pegar aquí el código del píxel de Meta ↓↓↓ -->
+<!-- <script>!function(f,b,e,v,n,t,s){...}</script> -->
+<!-- ↑↑↑ FIN META PIXEL ↑↑↑ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&amp;family=Hanken+Grotesk:ital,wght@0,300;0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #E9EBE4; color: #1C1F1D; font-family: 'Hanken Grotesk', system-ui, sans-serif; -webkit-font-smoothing: antialiased; text-wrap: pretty; }
+  h1, h2, h3, h4 { margin: 0; font-family: 'Outfit', system-ui, sans-serif; text-wrap: balance; }
+  p { margin: 0; }
+  a { color: #7E2D3A; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: #1C1F1D; }
+  a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid #7E2D3A; outline-offset: 3px; border-radius: 2px; }
+  summary { cursor: pointer; list-style: none; }
+  summary::-webkit-details-marker { display: none; }
+  details[open] .chev { transform: rotate(45deg); }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</helmet>
+
+<main style="overflow-x: hidden">
+
+  <header style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px clamp(20px, 5vw, 56px); position: sticky; top: 0; z-index: 20; backdrop-filter: blur(10px); borderbottom: 1px solid rgba(28,31,29,0.08); background-color: #DFE2DA">
+    <img src="assets/logo-esmalte-alpha.png" alt="Esmalte Studio" width="1479" height="325" style="width: clamp(132px, 34vw, 168px); height: auto; display: block">
+    <a href="{{ waGeneral }}" target="_blank" rel="noopener" style="font-family: 'Outfit', sans-serif; font-size: 14px; font-weight: 500; letter-spacing: 0.02em; color: #E9EBE4; background: #1C1F1D; padding: 11px 18px; border-radius: 999px; text-decoration: none; whiteSpace: nowrap" style-hover="background: #7E2D3A">Escribir por WhatsApp</a>
+  </header>
+
+  <!-- 1 · HERO -->
+  <section style="padding: clamp(56px, 9vw, 120px) clamp(20px, 5vw, 56px) clamp(48px, 7vw, 96px); max-width: 1120px; margin: 0 auto">
+    <p data-reveal="" style="font-family: 'Outfit', sans-serif; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: #7E2D3A; margin-bottom: 26px">Contenido para clínicas dentales</p>
+    <h1 data-reveal="" style="font-size: clamp(38px, 7.6vw, 78px); line-height: 1.02; letter-spacing: -0.03em; font-weight: 600; max-width: 15ch">Tus redes sociales, resueltas cada mes.</h1>
+    <p data-reveal="" style="margin-top: 26px; font-size: clamp(17px, 2.2vw, 21px); line-height: 1.55; max-width: 46ch; color: rgba(28,31,29,0.78)">Escribimos, diseñamos, editamos y publicamos. Tú solo apruebas las ideas. Si quieres aparecer en cámara, lo único que haces es grabarte: el resto queda de nuestro lado.</p>
+    <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 38px" data-reveal="">
+      <a href="{{ waGeneral }}" target="_blank" rel="noopener" style="font-family: 'Outfit', sans-serif; font-size: 16px; font-weight: 500; color: #E9EBE4; background: #1C1F1D; padding: 17px 30px; border-radius: 999px; text-decoration: none" style-hover="background: #7E2D3A">Hablar por WhatsApp</a>
+      <a href="#como-trabajamos" style="font-family: 'Outfit', sans-serif; font-size: 16px; font-weight: 500; color: #1C1F1D; border: 1px solid rgba(28,31,29,0.28); padding: 17px 30px; border-radius: 999px; text-decoration: none" style-hover="borderColor: #1C1F1D; background: rgba(28,31,29,0.04)">Ver cómo trabajamos</a>
+    </div>
+    <p data-reveal="" style="margin-top: 34px; font-size: 14px; color: rgba(28,31,29,0.55)">Trabajamos con odontólogos de México, España, Argentina, Colombia, Costa Rica, Uruguay y Chile.</p>
+  </section>
+
+  <!-- 2 · EL PROBLEMA -->
+  <section style="background: #1C1F1D; color: #E9EBE4; padding: clamp(64px, 9vw, 128px) clamp(20px, 5vw, 56px)">
+    <div style="max-width: 1120px; margin: 0 auto">
+      <h2 data-reveal="" style="font-size: clamp(28px, 4.4vw, 46px); line-height: 1.12; letter-spacing: -0.02em; font-weight: 500; max-width: 22ch">No pierdas tu tiempo como especialista</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: clamp(28px, 4vw, 56px); margin-top: clamp(40px, 6vw, 72px)">
+        <div data-reveal="">
+          <p style="font-family: 'Outfit', sans-serif; font-size: 15px; color: #C9A2A9; margin-bottom: 12px">01</p>
+          <p style="font-size: 17px; line-height: 1.6; color: rgba(233,235,228,0.82)">La agenda está llena de pacientes, no de horas libres para pensar publicaciones.</p>
+        </div>
+        <div data-reveal="">
+          <p style="font-family: 'Outfit', sans-serif; font-size: 15px; color: #C9A2A9; margin-bottom: 12px">02</p>
+          <p style="font-size: 17px; line-height: 1.6; color: rgba(233,235,228,0.82)">Por eso trabajamos tu exposición en redes sociales con contenido direccionado a tu público</p>
+        </div>
+        <div data-reveal="">
+          <p style="font-family: 'Outfit', sans-serif; font-size: 15px; color: #C9A2A9; margin-bottom: 12px">03</p>
+          <p style="font-size: 17px; line-height: 1.6; color: rgba(233,235,228,0.82)">Buscamos mejorar tu exposicion en redes para permitirte crecer como profesional</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · QUÉ ES -->
+  <section style="padding: clamp(64px, 9vw, 128px) clamp(20px, 5vw, 56px); max-width: 1120px; margin: 0 auto">
+    <p data-reveal="" style="font-family: 'Outfit', sans-serif; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: #7E2D3A; margin-bottom: 24px">Qué es Esmalte Studio</p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(28px, 5vw, 72px); align-items: start">
+      <div data-reveal="">
+        <h2 style="font-size: clamp(26px, 3.8vw, 42px); line-height: 1.14; letter-spacing: -0.02em; font-weight: 500">Somos el equipo que se ocupa de tus redes. Nada más, y nada menos.</h2>
+      </div>
+      <div data-reveal="" style="display: grid; gap: 22px">
+        <p style="font-size: 17px; line-height: 1.65; color: rgba(28,31,29,0.8)">Cada mes producimos el contenido de tu clínica: publicaciones, historias, la estrategia detrás y, si corresponde, la publicidad. Todo pensado para tu especialidad y para el paciente que quieres atender.</p>
+        
+        <div style="display: grid; gap: 14px; margin-top: 4px; padding-top: 24px; borderTop: 1px solid rgba(28,31,29,0.14)">
+          <p style="font-size: 16px; line-height: 1.5">Tu tiempo total: una llamada al inicio, aprobar el plan y una reunión al mes.</p>
+          <p style="font-size: 16px; line-height: 1.5">Nada de guiones que escribir ni de diseños que revisar a las once de la noche.</p>
+          <p style="font-size: 16px; line-height: 1.5">Si quieres aparecer, te llega el guion listo y solo grabas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · CÓMO TRABAJAMOS -->
+  <section id="como-trabajamos" style="background: #DFE2DA; padding: clamp(64px, 9vw, 128px) clamp(20px, 5vw, 56px)">
+    <div style="max-width: 1120px; margin: 0 auto">
+      <p data-reveal="" style="font-family: 'Outfit', sans-serif; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: #7E2D3A; margin-bottom: 24px">Cómo trabajamos</p>
+      <h2 data-reveal="" style="font-size: clamp(28px, 4.6vw, 50px); line-height: 1.1; letter-spacing: -0.025em; font-weight: 500; max-width: 20ch">Como seria un mes a mes con nosotros</h2>
+      <p data-reveal="" style="margin-top: 22px; max-width: 52ch; font-size: 17px; line-height: 1.6; color: rgba(28,31,29,0.75)">Cinco pasos. El primero lleva media hora de tu tiempo; los tres del medio, ninguno.</p>
+
+      <ol style="list-style: none; padding: 0; margin: clamp(44px, 6vw, 80px) 0 0; display: grid; gap: 2px">
+        <li data-reveal="" style="display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; background: #E9EBE4; padding: clamp(26px, 4vw, 40px); border-radius: 4px">
+          <div style="display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap">
+            <span style="font-family: 'Outfit', sans-serif; font-size: 14px; font-weight: 600; color: #7E2D3A; letter-spacing: 0.08em">PASO 01</span>
+            <h3 style="font-size: clamp(21px, 2.6vw, 28px); font-weight: 500; letter-spacing: -0.015em">Una llamada de treinta minutos</h3>
+          </div>
+          <p style="font-size: 17px; line-height: 1.65; color: rgba(28,31,29,0.78); max-width: 64ch">Nos cuentas qué tratamientos quieres llenar, qué paciente te interesa, qué preguntas te repiten en el consultorio y cómo explicas las cosas. Ahí sale casi todo el contenido del primer mes.</p>
+          <p style="font-size: 15px; color: rgba(28,31,29,0.55); margin-top: 4px">Tu tiempo: 30 minutos.</p>
+        </li>
+        <li data-reveal="" style="display: grid; gap: 10px; background: #E9EBE4; padding: clamp(26px, 4vw, 40px); border-radius: 4px">
+          <div style="display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap">
+            <span style="font-family: 'Outfit', sans-serif; font-size: 14px; font-weight: 600; color: #7E2D3A; letter-spacing: 0.08em">PASO 02</span>
+            <h3 style="font-size: clamp(21px, 2.6vw, 28px); font-weight: 500; letter-spacing: -0.015em">Te enviamos el plan del mes y lo apruebas</h3>
+          </div>
+          <p style="font-size: 17px; line-height: 1.65; color: rgba(28,31,29,0.78); max-width: 64ch">Un calendario simple: qué se publica, qué día y con qué idea detrás. Lo lees, marcas lo que no te representa y listo. Nada sale sin tu visto bueno.</p>
+          <p style="font-size: 15px; color: rgba(28,31,29,0.55); margin-top: 4px">Tu tiempo: 10 minutos de lectura.</p>
+        </li>
+        <li data-reveal="" style="display: grid; gap: 10px; background: #E9EBE4; padding: clamp(26px, 4vw, 40px); border-radius: 4px">
+          <div style="display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap">
+            <span style="font-family: 'Outfit', sans-serif; font-size: 14px; font-weight: 600; color: #7E2D3A; letter-spacing: 0.08em">PASO 03</span>
+            <h3 style="font-size: clamp(21px, 2.6vw, 28px); font-weight: 500; letter-spacing: -0.015em">Producimos todo</h3>
+          </div>
+          <p style="font-size: 17px; line-height: 1.65; color: rgba(28,31,29,0.78); max-width: 64ch">Escribimos los guiones completos, palabra por palabra. Diseñamos los carruseles, editamos los videos, armamos las historias y preparamos los textos de cada publicación.</p>
+          <p style="font-size: 17px; line-height: 1.65; color: rgba(28,31,29,0.78); max-width: 64ch">Si decidiste aparecer en cámara, recibes el guion y grabas con el teléfono. Nada de aprender a editar.</p>
+          <p style="font-size: 15px; color: rgba(28,31,29,0.55); margin-top: 4px">Tu tiempo: ninguno, salvo grabar si eliges hacerlo.</p>
+        </li>
+        <li data-reveal="" style="display: grid; gap: 10px; background: #E9EBE4; padding: clamp(26px, 4vw, 40px); border-radius: 4px">
+          <div style="display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap">
+            <span style="font-family: 'Outfit', sans-serif; font-size: 14px; font-weight: 600; color: #7E2D3A; letter-spacing: 0.08em">PASO 04</span>
+            <h3 style="font-size: clamp(21px, 2.6vw, 28px); font-weight: 500; letter-spacing: -0.015em">Publicamos en los días acordados</h3>
+          </div>
+          <p style="font-size: 17px; line-height: 1.65; color: rgba(28,31,29,0.78); max-width: 64ch">Subimos las publicaciones y las historias en el horario definido y respondemos los mensajes que llegan pidiendo turno, o te los pasamos ordenados a la recepción de la clínica, como prefieras.</p>
+          <p style="font-size: 15px; color: rgba(28,31,29,0.55); margin-top: 4px">Tu tiempo: ninguno.</p>
+        </li>
+        <li data-reveal="" style="display: grid; gap: 10px; background: #1C1F1D; color: #E9EBE4; padding: clamp(26px, 4vw, 40px); border-radius: 4px">
+          <div style="display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap">
+            <span style="font-family: 'Outfit', sans-serif; font-size: 14px; font-weight: 600; color: #C9A2A9; letter-spacing: 0.08em">PASO 05</span>
+            <h3 style="font-size: clamp(21px, 2.6vw, 28px); font-weight: 500; letter-spacing: -0.015em">Nos reunimos una vez al mes</h3>
+          </div>
+          <p style="font-size: 17px; line-height: 1.65; color: rgba(233,235,228,0.82); max-width: 64ch">Vemos qué se guardó la gente, qué generó consultas y qué no movió nada. Con eso ajustamos el mes siguiente. El plan es un punto de partida, no un molde.</p>
+          <p style="font-size: 15px; color: rgba(233,235,228,0.55); margin-top: 4px">Tu tiempo: 30 minutos al mes.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 4b · TRABAJOS -->
+  <section id="trabajos" style="padding: clamp(64px, 9vw, 128px) clamp(20px, 5vw, 56px); max-width: 1120px; margin: 0 auto">
+    <p data-reveal="" style="font-family: 'Outfit', sans-serif; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: #7E2D3A; margin-bottom: 24px">Nuestros trabajos</p>
+    <h2 data-reveal="" style="font-size: clamp(28px, 4.4vw, 46px); line-height: 1.1; letter-spacing: -0.025em; font-weight: 500; max-width: 24ch">Videos animados que hicimos de principio a fin. Sin cámara, sin guion tuyo, sin tu tiempo.</h2>
+    <p data-reveal="" style="margin-top: 20px; max-width: 54ch; font-size: 17px; line-height: 1.6; color: rgba(28,31,29,0.75)">Nadie grabó nada. Nosotros elegimos el tema, escribimos el texto, animamos, editamos y publicamos. Lo único que hizo el odontólogo fue leerlo y decir que sí. Pasa el mouse para ver, toca para escuchar.</p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; margin-top: clamp(40px, 6vw, 72px)">
+      <figure data-reveal="" style="margin: 0; display: grid; gap: 14px">
+        <div data-vidcard="" tabindex="0" role="button" aria-label="Reproducir video: Explicativo de tratamiento · animación, sin cámara" style="position: relative; aspect-ratio: 9 / 16; background: #1C1F1D; border-radius: 14px; overflow: hidden; cursor: pointer; transition: transform .5s cubic-bezier(.2,.7,.2,1), box-shadow .5s cubic-bezier(.2,.7,.2,1); boxShadow: 0 2px 10px rgba(28,31,29,0.12)">
+          <video src="videos/trabajo-1.mp4" loop="{{ true }}" muted="{{ true }}" playsInline="{{ true }}" preload="metadata" style="width: 100%; height: 100%; objectFit: cover; display: block; transition: transform .8s cubic-bezier(.2,.7,.2,1)"></video>
+          <div data-veil="" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(28,31,29,0.05) 45%, rgba(28,31,29,0.72) 100%); transition: opacity .45s ease; pointerEvents: none"></div>
+          <div data-play="" style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; transition: opacity .35s ease, transform .5s cubic-bezier(.2,.7,.2,1); pointerEvents: none">
+            <span style="width: 62px; height: 62px; border-radius: 999px; background: rgba(233,235,228,0.92); display: flex; align-items: center; justify-content: center">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="#1C1F1D" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>
+            </span>
+          </div>
+          <div data-sound="" style="position: absolute; top: 12px; right: 12px; height: 34px; padding: 0 12px; border-radius: 999px; background: rgba(28,31,29,0.55); backdropFilter: blur(6px); color: #E9EBE4; display: flex; align-items: center; gap: 7px; font-family: 'Outfit', sans-serif; font-size: 12px; letter-spacing: 0.04em; transition: opacity .35s ease; pointerEvents: none">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M4 9v6h3.5L12 19V5L7.5 9H4Zm12.5-.7 1.4-1.4A7.9 7.9 0 0 1 20 12a7.9 7.9 0 0 1-2.1 5.1l-1.4-1.4A5.9 5.9 0 0 0 18 12c0-1.4-.6-2.7-1.5-3.7Z"/><path d="M3 3.6 20.4 21l-1.4 1.4L1.6 5 3 3.6Z"/></svg>
+            <span data-soundlabel="">Silenciado</span>
+          </div>
+        </div>
+        <figcaption style="font-size: 15px; line-height: 1.5; color: rgba(28,31,29,0.7)">Explicativo de tratamiento · animación, sin cámara</figcaption>
+      </figure>
+      <figure data-reveal="" style="margin: 0; display: grid; gap: 14px">
+        <div data-vidcard="" tabindex="0" role="button" aria-label="Reproducir video: Pieza animada para redes · producida sin cámara" style="position: relative; aspect-ratio: 9 / 16; background: #1C1F1D; border-radius: 14px; overflow: hidden; cursor: pointer; transition: transform .5s cubic-bezier(.2,.7,.2,1), box-shadow .5s cubic-bezier(.2,.7,.2,1); boxShadow: 0 2px 10px rgba(28,31,29,0.12)">
+          <video src="videos/trabajo-2.mp4" loop="{{ true }}" muted="{{ true }}" playsInline="{{ true }}" preload="metadata" style="width: 100%; height: 100%; objectFit: cover; display: block; transition: transform .8s cubic-bezier(.2,.7,.2,1)"></video>
+          <div data-veil="" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(28,31,29,0.05) 45%, rgba(28,31,29,0.72) 100%); transition: opacity .45s ease; pointerEvents: none"></div>
+          <div data-play="" style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; transition: opacity .35s ease, transform .5s cubic-bezier(.2,.7,.2,1); pointerEvents: none">
+            <span style="width: 62px; height: 62px; border-radius: 999px; background: rgba(233,235,228,0.92); display: flex; align-items: center; justify-content: center">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="#1C1F1D" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>
+            </span>
+          </div>
+          <div data-sound="" style="position: absolute; top: 12px; right: 12px; height: 34px; padding: 0 12px; border-radius: 999px; background: rgba(28,31,29,0.55); backdropFilter: blur(6px); color: #E9EBE4; display: flex; align-items: center; gap: 7px; font-family: 'Outfit', sans-serif; font-size: 12px; letter-spacing: 0.04em; transition: opacity .35s ease; pointerEvents: none">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M4 9v6h3.5L12 19V5L7.5 9H4Zm12.5-.7 1.4-1.4A7.9 7.9 0 0 1 20 12a7.9 7.9 0 0 1-2.1 5.1l-1.4-1.4A5.9 5.9 0 0 0 18 12c0-1.4-.6-2.7-1.5-3.7Z"/><path d="M3 3.6 20.4 21l-1.4 1.4L1.6 5 3 3.6Z"/></svg>
+            <span data-soundlabel="">Silenciado</span>
+          </div>
+        </div>
+        <figcaption style="font-size: 15px; line-height: 1.5; color: rgba(28,31,29,0.7)">Pieza animada para redes · producida sin cámara</figcaption>
+      </figure>
+      <figure data-reveal="" style="margin: 0; display: grid; gap: 14px">
+        <div data-vidcard="" tabindex="0" role="button" aria-label="Reproducir video: Explicativo de A.T.M. · animación 3D" style="position: relative; aspect-ratio: 9 / 16; background: #1C1F1D; border-radius: 14px; overflow: hidden; cursor: pointer; transition: transform .5s cubic-bezier(.2,.7,.2,1), box-shadow .5s cubic-bezier(.2,.7,.2,1); boxShadow: 0 2px 10px rgba(28,31,29,0.12)">
+          <video src="videos/trabajo-3.mp4" loop="{{ true }}" muted="{{ true }}" playsInline="{{ true }}" preload="metadata" style="width: 100%; height: 100%; objectFit: cover; display: block; transition: transform .8s cubic-bezier(.2,.7,.2,1)"></video>
+          <div data-veil="" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(28,31,29,0.05) 45%, rgba(28,31,29,0.72) 100%); transition: opacity .45s ease; pointerEvents: none"></div>
+          <div data-play="" style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; transition: opacity .35s ease, transform .5s cubic-bezier(.2,.7,.2,1); pointerEvents: none">
+            <span style="width: 62px; height: 62px; border-radius: 999px; background: rgba(233,235,228,0.92); display: flex; align-items: center; justify-content: center">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="#1C1F1D" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>
+            </span>
+          </div>
+          <div data-sound="" style="position: absolute; top: 12px; right: 12px; height: 34px; padding: 0 12px; border-radius: 999px; background: rgba(28,31,29,0.55); backdropFilter: blur(6px); color: #E9EBE4; display: flex; align-items: center; gap: 7px; font-family: 'Outfit', sans-serif; font-size: 12px; letter-spacing: 0.04em; transition: opacity .35s ease; pointerEvents: none">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M4 9v6h3.5L12 19V5L7.5 9H4Zm12.5-.7 1.4-1.4A7.9 7.9 0 0 1 20 12a7.9 7.9 0 0 1-2.1 5.1l-1.4-1.4A5.9 5.9 0 0 0 18 12c0-1.4-.6-2.7-1.5-3.7Z"/><path d="M3 3.6 20.4 21l-1.4 1.4L1.6 5 3 3.6Z"/></svg>
+            <span data-soundlabel="">Silenciado</span>
+          </div>
+        </div>
+        <figcaption style="font-size: 15px; line-height: 1.5; color: rgba(28,31,29,0.7)">Explicativo de A.T.M. · animación 3D</figcaption>
+      </figure>
+    </div>
+
+    <div data-reveal="" style="margin-top: clamp(32px, 5vw, 56px); background: #1C1F1D; color: #E9EBE4; border-radius: 6px; padding: clamp(26px, 4vw, 44px); display: grid; gap: 18px">
+      <h3 style="font-size: clamp(20px, 2.4vw, 26px); font-weight: 500; letter-spacing: -0.015em; max-width: 30ch">Lo que haces tú: aprobar. Lo que hacemos nosotros: el resto.</h3>
+      <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; max-width: 62ch">
+        <li style="font-size: 17px; line-height: 1.5; display: grid; grid-template-columns: 18px 1fr; gap: 12px"><span style="color: #C9A2A9">—</span><span>No propones ideas: llegamos con el plan hecho.</span></li>
+        <li style="font-size: 17px; line-height: 1.5; display: grid; grid-template-columns: 18px 1fr; gap: 12px"><span style="color: #C9A2A9">—</span><span>No escribes guiones: los entregamos completos.</span></li>
+        <li style="font-size: 17px; line-height: 1.5; display: grid; grid-template-columns: 18px 1fr; gap: 12px"><span style="color: #C9A2A9">—</span><span>No grabas nada, salvo que quieras aparecer.</span></li>
+        <li style="font-size: 17px; line-height: 1.5; display: grid; grid-template-columns: 18px 1fr; gap: 12px"><span style="color: #C9A2A9">—</span><span>No editas, no diseñas, no subes nada. Publicamos nosotros.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 5 · PLANES -->
+  <section id="planes" style="padding: clamp(64px, 9vw, 128px) clamp(20px, 5vw, 56px); max-width: 1200px; margin: 0 auto; position: relative">
+    <p data-reveal="" style="font-family: 'Outfit', sans-serif; font-size: 13px; letter-spacing: 0.16em; text-transform: uppercase; color: #7E2D3A; margin-bottom: 24px">Los planes</p>
+    <h2 data-reveal="" style="font-size: clamp(28px, 4.4vw, 46px); line-height: 1.1; letter-spacing: -0.025em; font-weight: 500; max-width: 20ch">Tres formas de empezar</h2>
+    <p data-reveal="" style="margin-top: 20px; max-width: 50ch; font-size: 17px; line-height: 1.6; color: rgba(28,31,29,0.75)">Son puntos de partida. Después de la primera llamada ajustamos lo que haga falta para tu clínica.</p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-top: clamp(40px, 6vw, 72px); align-items: stretch">
+
+      <article data-reveal="" style="display: flex; flex-direction: column; gap: 22px; background: #E9EBE4; border: 1px solid rgba(28,31,29,0.16); border-radius: 6px; padding: clamp(26px, 3vw, 36px)">
+        <div>
+          <h3 style="font-size: 24px; font-weight: 500; letter-spacing: -0.01em">Básico</h3>
+          <p style="margin-top: 8px; font-size: 15px; line-height: 1.5; color: rgba(28,31,29,0.62)">Para volver a tener una cuenta viva y ordenada.</p>
+        </div>
+        <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; flex: 1">
+          <li style="font-size: 16px; line-height: 1.45; display: grid; grid-template-columns: 18px 1fr; gap: 10px"><span style="color: #7E2D3A">—</span><span>4 publicaciones al mes</span></li>
+          <li style="font-size: 16px; line-height: 1.45; display: grid; grid-template-columns: 18px 1fr; gap: 10px"><span style="color: #7E2D3A">—</span><span>6 historias al mes</span></li>
+          <li style="font-size: 16px; line-height: 1.45; display: grid; grid-template-columns: 18px 1fr; gap: 10px"><span style="color: #7E2D3A">—</span><span>Guiones y textos escritos por nosotros</span></li>
+          <li style="font-size: 16px; line-height: 1.45; display: grid; grid-template-columns: 18px 1fr; gap: 10px"><span style="color: #7E2D3A">—</span><span>Publicación en los días acordados</span></li>
+        </ul>
+        <a href="{{ waBasico }}" target="_blank" rel="noopener" style="font-family: 'Outfit', sans-serif; font-size: 15px; font-weight: 500; text-align: center; color: #1C1F1D; border: 1px solid rgba(28,31,29,0.3); padding: 15px 20px; border-radius: 999px; text-decoration: none" style-hover="borderColor: #1C1F1D; background: rgba(28,31,29,0.04)">Ver precio por WhatsApp</a>
+      </article>
+
+      <article data-reveal="" style="display: flex; flex-direction: column; gap: 22px; background: #1C1F1D; color: #E9EBE4; border: 1px solid #1C1F1D; border-radius: 6px; padding: clamp(26px, 3vw, 36px); position: relative">
+        <span style="position: absolute; top: -13px; left: 50%; transform: translateX(-50%); background: #7E2D3A; color: #E9EBE4; font-family: 'Outfit', sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; white-space: nowrap">MÁS ELEGIDO</span>
+        <div>
+          <h3 style="font-size: 24px; font-weight: 500; letter-spacing: -0.01em">Intermedio</h3>
+          <p style="margin-top: 8px; font-size: 15px; line-height: 1.5; color: rgba(233,235,228,0.62)">Para atraer consultas nuevas, no solo estar presente.</p>
+        </div>
+        <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; flex: 1">
+          <li style="font-size: 16px; line-height: 1.45; display: grid; grid-template-columns: 18px 1fr; gap: 10px"><span style="color: #C9A2A9">—</span><span>5 publicaciones al mes (videos y carruseles)</span></li>
+          <li style="font-size: 16px; line-height: 1.45; display: grid; grid-template-columns: 18px 1fr; gap: 10px"><span style="color: #C9A2A9">—</span><span>10 historias al mes</span></li>
+          <li style="font-size: 16px; line-height: 1.45; display: grid; grid-template-columns: 18px 1fr; gap: 10px"><span style="color: #C9A2A9">—</span><span>Publicidad</span></li>
+          <li style="font-size: 16px; line-height: 1.45; display: grid; grid-template-columns: 18px 1fr; gap: 10px"><span style="color: #C9A2A9">—</span><span>Estrategia de contenido</span></li>
+          <li style="font-size: 16px; line-height: 1.45; display: grid; grid-template-columns: 18px 1fr; gap: 10px"><span style="color: #C9A2A9">—</span><span>Reunión mensual</span></li>
+        </ul>
+        <a href="{{ waIntermedio }}" target="_blank" rel="noopener" style="font-family: 'Outfit', sans-serif; font-size: 15px; font-weight: 500; text-align: center; color: #1C1F1D; background: #E9EBE4; padding: 15px 20px; border-radius: 999px; text-decoration: none" style-hover="background: #C9A2A9">Ver precio por WhatsApp</a>
+      </article>
+
+      <article data-reveal="" style="display: flex; flex-direction: column; gap: 22px; background: #E9EBE4; border: 1px solid rgba(28,31,29,0.16); border-radius: 6px; padding: clamp(26px, 3vw, 36px)">
+        <div>
+          <h3 style="font-size: 24px; font-weight: 500; letter-spacing: -0.01em">Avanzado</h3>
+          <p style="margin-top: 8px; font-size: 15px; line-height: 1.5; color: rgba(28,31,29,0.62)">Para clínicas que además quieren su página web resuelta.</p>
+        </div>
+        <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; flex: 1">
+          <li style="font-size: 16px; line-height: 1.45; display: grid; grid-template-columns: 18px 1fr; gap: 10px"><span style="color: #7E2D3A">—</span><span>6 publicaciones al mes</span></li>
+          <li style="font-size: 16px; line-height: 1.45; display: grid; grid-template-columns: 18px 1fr; gap: 10px"><span style="color: #7E2D3A">—</span><span>12 historias al mes</span></li>
+          <li style="font-size: 16px; line-height: 1.45; display: grid; grid-template-columns: 18px 1fr; gap: 10px"><span style="color: #7E2D3A">—</span><span>Publicidad</span></li>
+          <li style="font-size: 16px; line-height: 1.45; display: grid; grid-template-columns: 18px 1fr; gap: 10px"><span style="color: #7E2D3A">—</span><span>Estrategia y calendario de contenido</span></li>
+          <li style="font-size: 16px; line-height: 1.45; display: grid; grid-template-columns: 18px 1fr; gap: 10px"><span style="color: #7E2D3A">—</span><span>Página web: creación y mantenimiento</span></li>
+          <li style="font-size: 16px; line-height: 1.45; display: grid; grid-template-columns: 18px 1fr; gap: 10px"><span style="color: #7E2D3A">—</span><span>Reunión mensual</span></li>
+        </ul>
+        <a href="{{ waAvanzado }}" target="_blank" rel="noopener" style="font-family: 'Outfit', sans-serif; font-size: 15px; font-weight: 500; text-align: center; color: #1C1F1D; border: 1px solid rgba(28,31,29,0.3); padding: 15px 20px; border-radius: 999px; text-decoration: none" style-hover="borderColor: #1C1F1D; background: rgba(28,31,29,0.04)">Ver precio por WhatsApp</a>
+      </article>
+    </div>
+
+  <!-- 6 · PARA QUIÉN -->
+  <section style="padding: 0 clamp(20px, 5vw, 56px) clamp(64px, 9vw, 128px); max-width: 1120px; margin: 0 auto">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 2px; border-radius: 6px; overflow: hidden">
+      <div data-reveal="" style="background: #DFE2DA; padding: clamp(28px, 4vw, 48px)">
+        <h2 style="font-size: clamp(22px, 2.8vw, 30px); font-weight: 500; letter-spacing: -0.015em; margin-bottom: 26px">Esto es para ti si…</h2>
+        <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 16px">
+          <li style="font-size: 17px; line-height: 1.55">Tienes una especialidad clara —ortodoncia, implantes, ATM, rehabilitación— y un paciente que vale la espera.</li>
+          <li style="font-size: 17px; line-height: 1.55">Quieres que tu clínica se vea profesional sin dedicarle tus noches.</li>
+          <li style="font-size: 17px; line-height: 1.55">Te sirve que alguien te lleve el plan, lo ejecute y te avise cuando hay algo que aprobar.</li>
+          <li style="font-size: 17px; line-height: 1.55">Puedes darnos treinta minutos al inicio y treinta al mes.</li>
+        </ul>
+      </div>
+      <div data-reveal="" style="background: #1C1F1D; color: #E9EBE4; padding: clamp(28px, 4vw, 48px)">
+        <h2 style="font-size: clamp(22px, 2.8vw, 30px); font-weight: 500; letter-spacing: -0.015em; margin-bottom: 26px; color: #E9EBE4">Esto no es para ti si…</h2>
+        <ul style="list-style: none; padding: 0; margin: 0; display: grid; gap: 16px">
+          <li style="font-size: 17px; line-height: 1.55; color: rgba(233,235,228,0.85)">Buscas pacientes la semana que viene. El contenido acumula: los primeros meses ordenan la cuenta, no llenan la agenda.</li>
+          <li style="font-size: 17px; line-height: 1.55; color: rgba(233,235,228,0.85)">Quieres que te garanticemos una cantidad de consultas. No lo hacemos, y quien lo hace te está mintiendo.</li>
+          <li style="font-size: 17px; line-height: 1.55; color: rgba(233,235,228,0.85)">Necesitas casos de éxito ajenos para decidir. Somos nuevos: lo que podemos mostrarte es cómo trabajamos.</li>
+          <li style="font-size: 17px; line-height: 1.55; color: rgba(233,235,228,0.85)">Prefieres decidir cada palabra y cada imagen tú mismo. Ahí te conviene alguien que ejecute tus órdenes, no un equipo que propone.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · FAQ -->
+  <section style="background: #DFE2DA; padding: clamp(64px, 9vw, 128px) clamp(20px, 5vw, 56px)">
+    <div style="max-width: 840px; margin: 0 auto">
+      <h2 data-reveal="" style="font-size: clamp(28px, 4.4vw, 44px); line-height: 1.1; letter-spacing: -0.025em; font-weight: 500; margin-bottom: clamp(32px, 5vw, 56px)">Preguntas frecuentes</h2>
+
+      <details data-reveal="" style="borderTop: 1px solid rgba(28,31,29,0.18); padding: 22px 0">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Outfit', sans-serif; font-size: clamp(18px, 2.2vw, 21px); font-weight: 500; letter-spacing: -0.01em">¿Necesito aparecer en cámara?<span class="chev" style="flex: none; font-size: 22px; color: #7E2D3A; transition: transform 0.25s ease">+</span></summary>
+        <p style="margin-top: 14px; font-size: 17px; line-height: 1.6; color: rgba(28,31,29,0.78); max-width: 62ch">No. Producimos el contenido completo sin que grabes nada. Si prefieres aparecer, te enviamos los guiones y solo grabas; del resto nos ocupamos nosotros.</p>
+      </details>
+
+      <details data-reveal="" style="borderTop: 1px solid rgba(28,31,29,0.18); padding: 22px 0">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Outfit', sans-serif; font-size: clamp(18px, 2.2vw, 21px); font-weight: 500; letter-spacing: -0.01em">¿En cuánto tiempo empieza todo?<span class="chev" style="flex: none; font-size: 22px; color: #7E2D3A; transition: transform 0.25s ease">+</span></summary>
+        <p style="margin-top: 14px; font-size: 17px; line-height: 1.6; color: rgba(28,31,29,0.78); max-width: 62ch">En menos de siete días desde que arrancamos ya tienes tu primera pieza publicada.</p>
+      </details>
+
+      <details data-reveal="" style="borderTop: 1px solid rgba(28,31,29,0.18); padding: 22px 0">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Outfit', sans-serif; font-size: clamp(18px, 2.2vw, 21px); font-weight: 500; letter-spacing: -0.01em">¿Hay permanencia mínima?<span class="chev" style="flex: none; font-size: 22px; color: #7E2D3A; transition: transform 0.25s ease">+</span></summary>
+        <p style="margin-top: 14px; font-size: 17px; line-height: 1.6; color: rgba(28,31,29,0.78); max-width: 62ch">No. Cancelas cuando quieras.</p>
+      </details>
+
+      <details data-reveal="" style="borderTop: 1px solid rgba(28,31,29,0.18); padding: 22px 0">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Outfit', sans-serif; font-size: clamp(18px, 2.2vw, 21px); font-weight: 500; letter-spacing: -0.01em">¿Tengo que escribir los guiones?<span class="chev" style="flex: none; font-size: 22px; color: #7E2D3A; transition: transform 0.25s ease">+</span></summary>
+        <p style="margin-top: 14px; font-size: 17px; line-height: 1.6; color: rgba(28,31,29,0.78); max-width: 62ch">No. Los escribimos nosotros, completos, palabra por palabra. Tú los lees y apruebas.</p>
+      </details>
+
+      <details data-reveal="" style="borderTop: 1px solid rgba(28,31,29,0.18); borderBottom: 1px solid rgba(28,31,29,0.18); padding: 22px 0">
+        <summary style="display: flex; align-items: center; justify-content: space-between; gap: 20px; font-family: 'Outfit', sans-serif; font-size: clamp(18px, 2.2vw, 21px); font-weight: 500; letter-spacing: -0.01em">¿Cuánto tiempo me lleva a mí?<span class="chev" style="flex: none; font-size: 22px; color: #7E2D3A; transition: transform 0.25s ease">+</span></summary>
+        <p style="margin-top: 14px; font-size: 17px; line-height: 1.6; color: rgba(28,31,29,0.78); max-width: 62ch">Poco: una llamada al inicio, la aprobación del calendario y una reunión al mes. Si eliges grabar, súmale el rato de grabación.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- 8 · CIERRE -->
+  <section style="background: #1C1F1D; color: #E9EBE4; padding: clamp(80px, 12vw, 160px) clamp(20px, 5vw, 56px); text-align: center">
+    <h2 data-reveal="" style="font-size: clamp(32px, 6vw, 64px); line-height: 1.06; letter-spacing: -0.03em; font-weight: 600; max-width: 22ch; margin: 0 auto">Cuéntanos qué atiendes y te decimos qué haríamos.</h2>
+    <div data-reveal="" style="margin-top: 40px; display: flex; justify-content: center">
+      <a href="{{ waGeneral }}" target="_blank" rel="noopener" style="font-family: 'Outfit', sans-serif; font-size: 17px; font-weight: 500; color: #1C1F1D; background: #E9EBE4; padding: 19px 34px; border-radius: 999px; text-decoration: none" style-hover="background: #C9A2A9">Escribir por WhatsApp</a>
+    </div>
+  </section>
+
+  <footer style="padding: clamp(36px, 5vw, 56px) clamp(20px, 5vw, 56px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; max-width: 1120px; margin: 0 auto">
+    <img src="assets/logo-esmalte-alpha.png" alt="Esmalte Studio" width="1479" height="325" style="width: 150px; height: auto; display: block">
+    <div style="display: flex; align-items: center; gap: 20px; font-size: 15px; color: rgba(28,31,29,0.6)">
+      <a href="https://instagram.com/esmaltestudio_" target="_blank" rel="noopener" style="color: #1C1F1D; text-decoration: none" style-hover="color: #7E2D3A">@esmaltestudio_</a>
+      <span>© 2026</span>
+    </div>
+  </footer>
+
+  <sc-if value="{{ showFab }}" hint-placeholder-val="{{ true }}">
+    <a href="{{ waGeneral }}" target="_blank" rel="noopener" aria-label="Escribir a Esmalte Studio por WhatsApp" style="position: fixed; right: clamp(16px, 3vw, 28px); bottom: clamp(16px, 3vw, 28px); z-index: 50; width: 58px; height: 58px; border-radius: 999px; background: #7E2D3A; color: #E9EBE4; display: flex; align-items: center; justify-content: center; boxShadow: 0 8px 24px rgba(28,31,29,0.28); textDecoration: none" style-hover="background: #1C1F1D">
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.97L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.06c-.24.68-1.4 1.31-1.93 1.36-.53.05-1.02.24-3.45-.72-2.93-1.15-4.76-4.2-4.9-4.4-.14-.19-1.15-1.53-1.15-2.92 0-1.39.73-2.07 1-2.36.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.48.24.58.79 1.98.86 2.12.07.15.12.32.02.51-.1.19-.36.53-.53.72-.17.19-.25.29-.14.53.11.24.53 1.06 1.15 1.72.8.85 1.46 1.11 1.7 1.23.24.12.38.1.53-.06.14-.17.6-.7.76-.94.17-.24.34-.19.57-.12.24.08 1.5.72 1.75.85.26.14.43.2.5.31.06.12.06.67-.19 1.35Z"></path></svg>
+    </a>
+  </sc-if>
+</main>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;whatsapp&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;5493435314434&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contacto&quot;},&quot;showFab&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Contacto&quot;}}">
+class Component extends DCLogic {
+  wa(msg) {
+    const n = String(this.props.whatsapp ?? "5493435314434").replace(/[^0-9]/g, "");
+    return "https://wa.me/" + n + "?text=" + encodeURIComponent(msg);
+  }
+  renderVals() {
+    return {
+      showFab: this.props.showFab ?? true,
+      waGeneral: this.wa("Hola Esmalte Studio, soy odontólogo y quiero saber cómo trabajan las redes de la clínica."),
+      waBasico: this.wa("Hola Esmalte Studio, quiero saber el precio del plan Básico."),
+      waIntermedio: this.wa("Hola Esmalte Studio, quiero saber el precio del plan Intermedio."),
+      waAvanzado: this.wa("Hola Esmalte Studio, quiero saber el precio del plan Avanzado.")
+    };
+  }
+  setupVideoCards() {
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const cards = Array.from(document.querySelectorAll("[data-vidcard]"));
+    cards.forEach(card => {
+      if (card.dataset.wired) return;
+      card.dataset.wired = "1";
+      const v = card.querySelector("video");
+      const veil = card.querySelector("[data-veil]");
+      const play = card.querySelector("[data-play]");
+      const sound = card.querySelector("[data-sound]");
+      const label = card.querySelector("[data-soundlabel]");
+      if (!v) return;
+      v.muted = true;
+      const on = () => {
+        veil.style.opacity = "0.35";
+        play.style.opacity = "0";
+        play.style.transform = "scale(1.25)";
+        if (!reduce) { card.style.transform = "translateY(-6px)"; card.style.boxShadow = "0 18px 44px rgba(28,31,29,0.22)"; v.style.transform = "scale(1.05)"; }
+        const p = v.play(); if (p && p.catch) p.catch(() => {});
+      };
+      const setBadge = () => {
+        label.textContent = v.muted ? "Silenciado" : "Con sonido";
+        sound.style.opacity = v.muted ? "1" : "0.85";
+        sound.querySelectorAll("path")[1].style.display = v.muted ? "" : "none";
+      };
+      card._reset = () => {
+        v.pause();
+        v.muted = true;
+        setBadge();
+        veil.style.opacity = "1";
+        play.style.opacity = "1";
+        play.style.transform = "none";
+        card.style.transform = "none";
+        card.style.boxShadow = "0 2px 10px rgba(28,31,29,0.12)";
+        v.style.transform = "none";
+      };
+      const off = () => card._reset();
+      const toggle = () => {
+        v.muted = !v.muted;
+        setBadge();
+        if (!v.muted) {
+          cards.forEach(o => { if (o !== card && o._reset) o._reset(); });
+          play.style.opacity = "0";
+          const p = v.play(); if (p && p.catch) p.catch(() => {});
+        }
+      };
+      card.addEventListener("mouseenter", on);
+      card.addEventListener("mouseleave", off);
+      card.addEventListener("focus", on);
+      card.addEventListener("blur", off);
+      card.addEventListener("click", toggle);
+      card.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(); } });
+    });
+    if (window.matchMedia("(hover: none)").matches) {
+      const io = new IntersectionObserver(entries => entries.forEach(e => {
+        const v = e.target.querySelector("video");
+        if (!v) return;
+        if (e.isIntersecting) { const p = v.play(); if (p && p.catch) p.catch(() => {}); }
+        else if (e.target._reset) e.target._reset();
+      }), { threshold: 0.6 });
+      cards.forEach(c => io.observe(c));
+    }
+  }
+
+  componentDidMount() {
+    this.setupVideoCards();
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduce) return;
+    const els = Array.from(document.querySelectorAll("[data-reveal]"));
+    els.forEach(el => {
+      el.style.opacity = "0";
+      el.style.transform = "translateY(16px)";
+      el.style.transition = "opacity .7s cubic-bezier(.2,.7,.2,1), transform .7s cubic-bezier(.2,.7,.2,1)";
+    });
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (!e.isIntersecting) return;
+        const sibs = Array.from(e.target.parentElement ? e.target.parentElement.children : []).filter(n => n.hasAttribute && n.hasAttribute("data-reveal"));
+        const i = Math.max(0, sibs.indexOf(e.target));
+        e.target.style.transitionDelay = Math.min(i * 90, 360) + "ms";
+        e.target.style.opacity = "1";
+        e.target.style.transform = "none";
+        io.unobserve(e.target);
+      });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
+    els.forEach(el => io.observe(el));
+  }
+}
+</script>
+</body>
+</html>
