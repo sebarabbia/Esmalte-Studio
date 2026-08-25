@@ -57,14 +57,7 @@
     </div>
   </section>
 
-  <div style="margin-top: clamp(56px, 7vw, 88px); borderTop: 1px solid rgba(28,31,29,0.12); borderBottom: 1px solid rgba(28,31,29,0.12); overflow: hidden; padding: 16px 0; background: #DFE2DA">
-    <div style="display: flex; width: max-content; animation: tick 34s linear infinite; gap: 0">
-      <span style="font-size: 14px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(28,31,29,0.72); white-space: nowrap; padding-right: 24px">México · España · Argentina · Colombia · Costa Rica · Uruguay · Chile · </span>
-      <span style="font-size: 14px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(28,31,29,0.72); white-space: nowrap; padding-right: 24px">México · España · Argentina · Colombia · Costa Rica · Uruguay · Chile · </span>
-    </div>
-  </div>
-
-  <section style="max-width: 1200px; margin: 0 auto; padding: 0 clamp(24px, 5vw, 56px)">
+  <section style="max-width: 1200px; margin: clamp(56px, 7vw, 88px) auto 0; padding: 0 clamp(24px, 5vw, 56px)">
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr))">
       <div data-reveal="" style="padding: clamp(34px, 4vw, 52px) clamp(22px, 3vw, 36px); borderBottom: 1px solid rgba(28,31,29,0.12); borderRight: 1px solid rgba(28,31,29,0.12)">
         <p style="font-size: clamp(46px, 9vw, 76px); line-height: 0.9; font-weight: 600; letter-spacing: -0.04em; color: #7E2D3A"><span style="letter-spacing: -3.04px;">30′</span></p>
@@ -157,38 +150,68 @@
   <section id="trabajos" style="padding: clamp(80px, 9vw, 128px) clamp(24px, 5vw, 56px) clamp(40px, 6vw, 80px); max-width: 1200px; margin: 0 auto">
     <p data-reveal="" style="font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #7E2D3A; margin-bottom: 26px">Nuestros trabajos</p>
     <h2 data-reveal="" style="font-size: clamp(30px, 7vw, 56px); line-height: 1.02; letter-spacing: -0.035em; font-weight: 600; max-width: 20ch">No tienes porque aparecer en cámara</h2>
-    <p data-reveal="" style="margin-top: 22px; max-width: 46ch; font-size: 17px; line-height: 1.5">Elegimos el tema, escribimos, animamos y publicamos. El odontólogo solo tuvo que aprobar la idea. (Toca para escuchar).<br></p>
+    <p data-reveal="" style="margin-top: 22px; max-width: 46ch; font-size: 17px; line-height: 1.5">Elegimos el tema, escribimos, animamos y publicamos. El odontólogo solo tuvo que aprobar la idea. Toca el video para pausarlo, o la píldora de arriba para el sonido.<br></p>
 
     <div style="display: grid; grid-auto-flow: column; grid-auto-columns: minmax(min(74vw, 260px), 1fr); gap: 16px; margin-top: clamp(40px, 5vw, 64px); overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 6px">
       <figure data-reveal="" style="margin: 0; display: grid; gap: 12px; scroll-snap-align: start">
-        <div data-vidcard="" tabindex="0" role="button" aria-label="Activar sonido: Explicativo de tratamiento" style="position: relative; aspect-ratio: 9 / 16; background: #1C1F1D; overflow: hidden; cursor: pointer; transition: transform .5s cubic-bezier(.2,.7,.2,1)">
+        <div data-vidcard="" tabindex="0" aria-label="Video: Explicativo de tratamiento" style="position: relative; aspect-ratio: 9 / 16; background: #1C1F1D; overflow: hidden; cursor: pointer; transition: transform .5s cubic-bezier(.2,.7,.2,1)">
           <video src="videos/trabajo-1.mp4" loop="{{ true }}" muted="{{ true }}" playsInline="{{ true }}" preload="metadata" style="width: 100%; height: 100%; objectFit: cover; display: block; transition: transform .8s cubic-bezier(.2,.7,.2,1)"></video>
           <div data-veil="" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(28,31,29,0) 60%, rgba(28,31,29,0.35) 100%); transition: opacity .45s ease; pointerEvents: none"></div>
-          <div data-sound="" style="position: absolute; top: 12px; right: 12px; height: 30px; padding: 0 11px; background: rgba(28,31,29,0.45); backdropFilter: blur(8px); color: #E9EBE4; display: flex; align-items: center; gap: 7px; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; transition: opacity .35s ease; pointerEvents: none">
+          <div data-sound="" style="position: absolute; top: 12px; right: 12px; height: 30px; padding: 0 11px; background: rgba(28,31,29,0.45); backdropFilter: blur(8px); color: #E9EBE4; display: flex; align-items: center; gap: 7px; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; transition: background .25s ease, opacity .25s ease; pointerEvents: auto; cursor: pointer">
             <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M4 9v6h3.5L12 19V5L7.5 9H4Zm12.5-.7 1.4-1.4A7.9 7.9 0 0 1 20 12a7.9 7.9 0 0 1-2.1 5.1l-1.4-1.4A5.9 5.9 0 0 0 18 12c0-1.4-.6-2.7-1.5-3.7Z"></path><path d="M3 3.6 20.4 21l-1.4 1.4L1.6 5 3 3.6Z"></path></svg>
             <span data-soundlabel="">Silenciado</span>
+          </div>
+          <div data-pausedicon="" style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity .25s ease; pointerEvents: none">
+            <span style="width: 54px; height: 54px; border-radius: 999px; background: rgba(28,31,29,0.42); backdropFilter: blur(10px); display: flex; align-items: center; justify-content: center">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="#E9EBE4" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"></path></svg>
+            </span>
+          </div>
+          <div data-bar="" style="position: absolute; left: 0; right: 0; bottom: 0; height: 30px; display: flex; align-items: flex-end; cursor: pointer; touchAction: none">
+            <div data-track="" style="position: relative; width: 100%; height: 2px; background: rgba(233,235,228,0.3); transition: height .2s ease, background .2s ease">
+              <div data-fill="" style="position: absolute; left: 0; top: 0; bottom: 0; width: 0%; background: rgba(233,235,228,0.85)"></div>
+            </div>
           </div>
         </div>
         <figcaption style="font-size: 14px; line-height: 1.4; font-weight: 500; color: rgba(28,31,29,0.75)">Explicativo de tratamiento · animación, sin cámara</figcaption>
       </figure>
       <figure data-reveal="" style="margin: 0; display: grid; gap: 12px; scroll-snap-align: start">
-        <div data-vidcard="" tabindex="0" role="button" aria-label="Activar sonido: Pieza animada para redes" style="position: relative; aspect-ratio: 9 / 16; background: #1C1F1D; overflow: hidden; cursor: pointer; transition: transform .5s cubic-bezier(.2,.7,.2,1)">
+        <div data-vidcard="" tabindex="0" aria-label="Video: Pieza animada para redes" style="position: relative; aspect-ratio: 9 / 16; background: #1C1F1D; overflow: hidden; cursor: pointer; transition: transform .5s cubic-bezier(.2,.7,.2,1)">
           <video src="videos/trabajo-2.mp4" loop="{{ true }}" muted="{{ true }}" playsInline="{{ true }}" preload="metadata" style="width: 100%; height: 100%; objectFit: cover; display: block; transition: transform .8s cubic-bezier(.2,.7,.2,1)"></video>
           <div data-veil="" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(28,31,29,0) 60%, rgba(28,31,29,0.35) 100%); transition: opacity .45s ease; pointerEvents: none"></div>
-          <div data-sound="" style="position: absolute; top: 12px; right: 12px; height: 30px; padding: 0 11px; background: rgba(28,31,29,0.45); backdropFilter: blur(8px); color: #E9EBE4; display: flex; align-items: center; gap: 7px; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; transition: opacity .35s ease; pointerEvents: none">
+          <div data-sound="" style="position: absolute; top: 12px; right: 12px; height: 30px; padding: 0 11px; background: rgba(28,31,29,0.45); backdropFilter: blur(8px); color: #E9EBE4; display: flex; align-items: center; gap: 7px; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; transition: background .25s ease, opacity .25s ease; pointerEvents: auto; cursor: pointer">
             <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M4 9v6h3.5L12 19V5L7.5 9H4Zm12.5-.7 1.4-1.4A7.9 7.9 0 0 1 20 12a7.9 7.9 0 0 1-2.1 5.1l-1.4-1.4A5.9 5.9 0 0 0 18 12c0-1.4-.6-2.7-1.5-3.7Z"></path><path d="M3 3.6 20.4 21l-1.4 1.4L1.6 5 3 3.6Z"></path></svg>
             <span data-soundlabel="">Silenciado</span>
+          </div>
+          <div data-pausedicon="" style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity .25s ease; pointerEvents: none">
+            <span style="width: 54px; height: 54px; border-radius: 999px; background: rgba(28,31,29,0.42); backdropFilter: blur(10px); display: flex; align-items: center; justify-content: center">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="#E9EBE4" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"></path></svg>
+            </span>
+          </div>
+          <div data-bar="" style="position: absolute; left: 0; right: 0; bottom: 0; height: 30px; display: flex; align-items: flex-end; cursor: pointer; touchAction: none">
+            <div data-track="" style="position: relative; width: 100%; height: 2px; background: rgba(233,235,228,0.3); transition: height .2s ease, background .2s ease">
+              <div data-fill="" style="position: absolute; left: 0; top: 0; bottom: 0; width: 0%; background: rgba(233,235,228,0.85)"></div>
+            </div>
           </div>
         </div>
         <figcaption style="font-size: 14px; line-height: 1.4; font-weight: 500; color: rgba(28,31,29,0.75)">Pieza animada para redes · sin cámara</figcaption>
       </figure>
       <figure data-reveal="" style="margin: 0; display: grid; gap: 12px; scroll-snap-align: start">
-        <div data-vidcard="" tabindex="0" role="button" aria-label="Activar sonido: Explicativo de A.T.M." style="position: relative; aspect-ratio: 9 / 16; background: #1C1F1D; overflow: hidden; cursor: pointer; transition: transform .5s cubic-bezier(.2,.7,.2,1)">
+        <div data-vidcard="" tabindex="0" aria-label="Video: Explicativo de A.T.M." style="position: relative; aspect-ratio: 9 / 16; background: #1C1F1D; overflow: hidden; cursor: pointer; transition: transform .5s cubic-bezier(.2,.7,.2,1)">
           <video src="videos/trabajo-3.mp4" loop="{{ true }}" muted="{{ true }}" playsInline="{{ true }}" preload="metadata" style="width: 100%; height: 100%; objectFit: cover; display: block; transition: transform .8s cubic-bezier(.2,.7,.2,1)"></video>
           <div data-veil="" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(28,31,29,0) 60%, rgba(28,31,29,0.35) 100%); transition: opacity .45s ease; pointerEvents: none"></div>
-          <div data-sound="" style="position: absolute; top: 12px; right: 12px; height: 30px; padding: 0 11px; background: rgba(28,31,29,0.45); backdropFilter: blur(8px); color: #E9EBE4; display: flex; align-items: center; gap: 7px; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; transition: opacity .35s ease; pointerEvents: none">
+          <div data-sound="" style="position: absolute; top: 12px; right: 12px; height: 30px; padding: 0 11px; background: rgba(28,31,29,0.45); backdropFilter: blur(8px); color: #E9EBE4; display: flex; align-items: center; gap: 7px; font-size: 11px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; transition: background .25s ease, opacity .25s ease; pointerEvents: auto; cursor: pointer">
             <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M4 9v6h3.5L12 19V5L7.5 9H4Zm12.5-.7 1.4-1.4A7.9 7.9 0 0 1 20 12a7.9 7.9 0 0 1-2.1 5.1l-1.4-1.4A5.9 5.9 0 0 0 18 12c0-1.4-.6-2.7-1.5-3.7Z"></path><path d="M3 3.6 20.4 21l-1.4 1.4L1.6 5 3 3.6Z"></path></svg>
             <span data-soundlabel="">Silenciado</span>
+          </div>
+          <div data-pausedicon="" style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity .25s ease; pointerEvents: none">
+            <span style="width: 54px; height: 54px; border-radius: 999px; background: rgba(28,31,29,0.42); backdropFilter: blur(10px); display: flex; align-items: center; justify-content: center">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="#E9EBE4" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"></path></svg>
+            </span>
+          </div>
+          <div data-bar="" style="position: absolute; left: 0; right: 0; bottom: 0; height: 30px; display: flex; align-items: flex-end; cursor: pointer; touchAction: none">
+            <div data-track="" style="position: relative; width: 100%; height: 2px; background: rgba(233,235,228,0.3); transition: height .2s ease, background .2s ease">
+              <div data-fill="" style="position: absolute; left: 0; top: 0; bottom: 0; width: 0%; background: rgba(233,235,228,0.85)"></div>
+            </div>
           </div>
         </div>
         <figcaption style="font-size: 14px; line-height: 1.4; font-weight: 500; color: rgba(28,31,29,0.75)">Explicativo de A.T.M. · animación 3D</figcaption>
@@ -326,7 +349,7 @@
     </div>
   </section>
 
-  <footer style="padding: clamp(28px, 4vw, 48px) clamp(24px, 5vw, 56px) calc(clamp(28px, 4vw, 48px) + 72px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px; max-width: 1200px; margin: 0 auto">
+  <footer style="padding: clamp(28px, 4vw, 48px) clamp(24px, 5vw, 56px) calc(clamp(28px, 4vw, 48px) + 28px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px; max-width: 1200px; margin: 0 auto">
     <img src="assets/logo-esmalte-alpha.png" alt="Esmalte Studio" width="1479" height="325" style="width: 140px; height: auto; display: block">
     <div style="display: flex; align-items: center; gap: 18px; font-size: 14px; font-weight: 500; color: rgba(28,31,29,0.65)">
       <a href="https://instagram.com/esmaltestudio_" target="_blank" rel="noopener" style="color: #1C1F1D; text-decoration: none; font-weight: 600" style-hover="color: #7E2D3A">@esmaltestudio_</a>
@@ -335,9 +358,8 @@
   </footer>
 
   <sc-if value="{{ showFab }}" hint-placeholder-val="{{ true }}">
-    <a href="{{ waGeneral }}" target="_blank" rel="noopener" style="position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 60px; background: #1C1F1D; color: #E9EBE4; font-size: 16px; font-weight: 600; text-decoration: none; borderTop: 1px solid rgba(126,45,58,0.9)" style-hover="background: #7E2D3A">
-      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.97L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.06c-.24.68-1.4 1.31-1.93 1.36-.53.05-1.02.24-3.45-.72-2.93-1.15-4.76-4.2-4.9-4.4-.14-.19-1.15-1.53-1.15-2.92 0-1.39.73-2.07 1-2.36.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.48.24.58.79 1.98.86 2.12.07.15.12.32.02.51-.1.19-.36.53-.53.72-.17.19-.25.29-.14.53.11.24.53 1.06 1.15 1.72.8.85 1.46 1.11 1.7 1.23.24.12.38.1.53-.06.14-.17.6-.7.76-.94.17-.24.34-.19.57-.12.24.08 1.5.72 1.75.85.26.14.43.2.5.31.06.12.06.67-.19 1.35Z"></path></svg>
-      Escribir por WhatsApp
+    <a href="{{ waGeneral }}" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp" style="position: fixed; right: clamp(16px, 4vw, 32px); bottom: clamp(16px, 4vw, 32px); z-index: 40; display: flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 999px; background: #1C1F1D; color: #E9EBE4; text-decoration: none; boxShadow: 0 6px 20px rgba(28,31,29,0.24); transition: transform .25s cubic-bezier(.2,.7,.2,1), background .25s ease" style-hover="background: #7E2D3A; transform: scale(1.06)">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.97L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2Zm5.8 14.06c-.24.68-1.4 1.31-1.93 1.36-.53.05-1.02.24-3.45-.72-2.93-1.15-4.76-4.2-4.9-4.4-.14-.19-1.15-1.53-1.15-2.92 0-1.39.73-2.07 1-2.36.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.48.24.58.79 1.98.86 2.12.07.15.12.32.02.51-.1.19-.36.53-.53.72-.17.19-.25.29-.14.53.11.24.53 1.06 1.15 1.72.8.85 1.46 1.11 1.7 1.23.24.12.38.1.53-.06.14-.17.6-.7.76-.94.17-.24.34-.19.57-.12.24.08 1.5.72 1.75.85.26.14.43.2.5.31.06.12.06.67-.19 1.35Z"></path></svg>
     </a>
   </sc-if>
 </main>
@@ -351,59 +373,103 @@ class Component extends DCLogic {
   renderVals() {
     return {
       showFab: this.props.showFab ?? true,
-      waGeneral: this.wa("Hola Esmalte Studio, soy odontólogo y quiero saber cómo trabajan las redes de la clínica."),
-      waBasico: this.wa("Hola Esmalte Studio, quiero saber el precio del plan Básico."),
-      waIntermedio: this.wa("Hola Esmalte Studio, quiero saber el precio del plan Intermedio."),
-      waAvanzado: this.wa("Hola Esmalte Studio, quiero saber el precio del plan Avanzado.")
+      waGeneral: this.wa("Hola Esmalte Studio, me gustaría mas información sobre sus servicios"),
+      waBasico: this.wa("Hola Esmalte Studio, me gustaría mas información sobre sus servicios"),
+      waIntermedio: this.wa("Hola Esmalte Studio, me gustaría mas información sobre sus servicios"),
+      waAvanzado: this.wa("Hola Esmalte Studio, me gustaría mas información sobre sus servicios")
     };
   }
   setupVideoCards() {
-    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const cards = Array.from(document.querySelectorAll("[data-vidcard]"));
     cards.forEach(card => {
       if (card.dataset.wired) return;
       card.dataset.wired = "1";
       const v = card.querySelector("video");
-      const veil = card.querySelector("[data-veil]");
       const sound = card.querySelector("[data-sound]");
       const label = card.querySelector("[data-soundlabel]");
+      const pausedIcon = card.querySelector("[data-pausedicon]");
+      const bar = card.querySelector("[data-bar]");
+      const track = card.querySelector("[data-track]");
+      const fill = card.querySelector("[data-fill]");
       if (!v) return;
       v.muted = true;
+      card._userPaused = false;
+      let dragging = false;
+
       const setBadge = () => {
         label.textContent = v.muted ? "Silenciado" : "Con sonido";
-        sound.style.opacity = v.muted ? "1" : "0.85";
+        sound.style.background = v.muted ? "rgba(28,31,29,0.45)" : "rgba(126,45,58,0.85)";
         const paths = sound.querySelectorAll("path");
         if (paths[1]) paths[1].style.display = v.muted ? "" : "none";
       };
-      const on = () => {
-        if (!reduce) card.style.transform = "translateY(-4px)";
-        const p = v.play(); if (p && p.catch) p.catch(() => {});
+      const setPausedUI = () => { pausedIcon.style.opacity = v.paused ? "1" : "0"; };
+      const expandBar = (yes) => {
+        track.style.height = yes ? "5px" : "2px";
+        track.style.background = yes ? "rgba(233,235,228,0.45)" : "rgba(233,235,228,0.3)";
       };
-      card._reset = () => {
-        v.muted = true;
-        setBadge();
-        card.style.transform = "none";
+      const seek = (clientX) => {
+        const r = track.getBoundingClientRect();
+        const ratio = Math.min(1, Math.max(0, (clientX - r.left) / r.width));
+        if (v.duration) { v.currentTime = ratio * v.duration; fill.style.width = (ratio * 100) + "%"; }
       };
-      const toggle = () => {
+
+      setBadge();
+      v.addEventListener("timeupdate", () => {
+        if (!dragging && v.duration) fill.style.width = ((v.currentTime / v.duration) * 100) + "%";
+      });
+      v.addEventListener("play", setPausedUI);
+      v.addEventListener("pause", setPausedUI);
+
+      card._reset = () => { v.muted = true; setBadge(); };
+
+      // tocar el video: pausa / reproduce
+      card.addEventListener("click", () => {
+        if (v.paused) { card._userPaused = false; const p = v.play(); if (p && p.catch) p.catch(() => {}); }
+        else { card._userPaused = true; v.pause(); }
+      });
+      card.addEventListener("keydown", e => {
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); card.click(); }
+      });
+
+      // píldora arriba a la derecha: sonido
+      sound.addEventListener("click", e => {
+        e.stopPropagation();
         v.muted = !v.muted;
         setBadge();
         if (!v.muted) {
           cards.forEach(o => { if (o !== card && o._reset) o._reset(); });
+          card._userPaused = false;
           const p = v.play(); if (p && p.catch) p.catch(() => {});
         }
-      };
-      card.addEventListener("mouseenter", on);
-      card.addEventListener("mouseleave", () => card._reset());
-      card.addEventListener("focus", on);
-      card.addEventListener("blur", () => card._reset());
-      card.addEventListener("click", toggle);
-      card.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(); } });
+      });
+
+      // barra inferior: scrub
+      bar.addEventListener("pointerenter", () => expandBar(true));
+      bar.addEventListener("pointerleave", () => { if (!dragging) expandBar(false); });
+      bar.addEventListener("pointerdown", e => {
+        e.stopPropagation();
+        dragging = true;
+        expandBar(true);
+        bar.setPointerCapture && bar.setPointerCapture(e.pointerId);
+        seek(e.clientX);
+      });
+      bar.addEventListener("pointermove", e => { if (dragging) { e.stopPropagation(); seek(e.clientX); } });
+      const endDrag = e => { if (!dragging) return; dragging = false; expandBar(false); if (e) e.stopPropagation(); };
+      bar.addEventListener("pointerup", endDrag);
+      bar.addEventListener("pointercancel", endDrag);
+      bar.addEventListener("click", e => e.stopPropagation());
     });
+
     const io = new IntersectionObserver(entries => entries.forEach(e => {
-      const v = e.target.querySelector("video");
+      const card = e.target, v = card.querySelector("video");
       if (!v) return;
-      if (e.isIntersecting) { const p = v.play(); if (p && p.catch) p.catch(() => {}); }
-      else { v.pause(); if (e.target._reset) e.target._reset(); }
+      if (e.isIntersecting) {
+        if (!card._userPaused) { const p = v.play(); if (p && p.catch) p.catch(() => {}); }
+      } else {
+        v.pause();
+        card._userPaused = false;
+        if (card._reset) card._reset();
+      }
     }), { threshold: 0.3 });
     cards.forEach(c => io.observe(c));
   }
