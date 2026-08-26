@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 630px; }
+  body {
+    background: #E9EBE4;
+    font-family: 'Archivo', -apple-system, Helvetica, Arial, sans-serif;
+    color: #1C1F1D;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    text-align: center;
+    position: relative;
+  }
+  .tile {
+    width: 132px; height: 132px; border-radius: 30px;
+    background: #26292A; display: flex; align-items: center; justify-content: center;
+    margin-bottom: 40px;
+  }
+  .tile svg { width: 82px; height: 82px; }
+  h1 {
+    font-size: 64px; font-weight: 600; letter-spacing: -0.03em;
+    line-height: 1.03; max-width: 15ch; margin-bottom: 26px;
+  }
+  p {
+    font-size: 30px; font-weight: 400; color: #55594f; letter-spacing: -0.01em;
+  }
+  .brand {
+    position: absolute; top: 54px; left: 60px;
+    font-size: 26px; font-weight: 700; letter-spacing: 0.16em; color: #26292A;
+  }
+  .brand span { font-weight: 400; letter-spacing: 0.28em; }
+  .wa {
+    position: absolute; bottom: 50px; right: 60px;
+    font-size: 24px; font-weight: 600; color: #7E2D3A;
+  }
+</style>
+</head>
+<body>
+  <div class="brand">ESMALTE <span>studio</span></div>
+  <div class="tile">
+    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#EDEEE8" d="M256 176C240 150 218 138 194 145C165 154 138 173 134 212C131 244 139 279 152 320C161 351 171 392 198 387C216 384 217 353 227 340C235 329 245 329 252 340C254 343 255 347 256 350C257 347 258 343 260 340C267 329 277 329 285 340C295 353 296 384 314 387C341 392 351 351 360 320C373 279 381 244 378 212C374 173 347 154 318 145C294 138 272 150 256 176 Z"/>
+    </svg>
+  </div>
+  <h1>Redes y contenido para clínicas dentales</h1>
+  <p>Tú solo apruebas. Nosotros hacemos el resto.</p>
+  <div class="wa">Escríbenos por WhatsApp →</div>
+</body>
+</html>

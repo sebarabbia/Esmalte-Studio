@@ -1,0 +1,15 @@
+{
+  "name": "Esmalte Studio",
+  "short_name": "Esmalte",
+  "description": "Redes y contenido para clínicas dentales.",
+  "lang": "es",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#E9EBE4",
+  "theme_color": "#26292A",
+  "icons": [
+    {"src": "/favicon.svg", "type": "image/svg+xml", "sizes": "any"},
+    {"src": "/icon-192.png", "type": "image/png", "sizes": "192x192"},
+    {"src": "/icon-512.png", "type": "image/png", "sizes": "512x512", "purpose": "any maskable"}
+  ]
+}
